@@ -15,10 +15,9 @@ In this lab, you will create a simple file server using Express.js, use that ser
 ## Procedure
 
 ### Create a Server with Express
-- [ ] Create a folder `static` which will hold the following:
-- [ ] Create a new file named `index.html`. Inside, use your Emmet abbreviation to create the HTML boiler plate. Have this HTML file display a greeting to the user.
-- [ ] Start the server by running `server.js` using `node`.
-- [ ] Visit your running server at `http://localhost:5000` with a web browser.
+
+- [ ] Start the server by running `index.js` using `npm run dev`.
+- [ ] Visit your running server at `http://localhost:3000` with a web browser.
 
 ### Sending a file
 
@@ -33,8 +32,8 @@ response.sendFile(__dirname + "/example.html")
 ### Limit the Express server to a `public` directory
 
 - [ ] Create a directory named `public` within your project directory.
-- [ ] Move the `index.html` into the `public` directory.
-- [ ] Update the `server.js` file to limit visitor access to the `public` directory. You will set up the `use` method on `app`. 
+- [ ] Inside `public` create a new file named `index.html`. Inside, use your Emmet abbreviation to create the HTML boiler plate. Have this HTML file display a greeting to the user.
+- [ ] Update the `index.js` file to limit visitor access to the `public` directory. You will set up the `use` method on `app`. 
 
 ```js
 app.use(express.static('public'))
@@ -44,7 +43,7 @@ app.use(express.static('public'))
 
 - [ ] Create at least two more HTML files within the `public` directory.
 - [ ] Create links on the `index` page so that users can navigate to the new pages.
-- [ ] Set up GET routes in your `server.js` and send your new HTML files as response.
+- [ ] Set up GET routes in your `index.js` and send your new HTML files as response.
 
 ###
 
@@ -58,6 +57,5 @@ Your software should:
 
 ## Going Further
 
-- Add a `start` script to the `package.json` file to make it easier to start your server. In the `package.json` of your project, navigate to the `"scripts:"` object. Create a new key `"start"`, and have the value be `"node server.js"`. Test your new script with `npm start`!
 - How could you use `request.params` to dynamically send different files dependent on the value of the param?
 
