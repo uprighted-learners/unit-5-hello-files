@@ -16,6 +16,7 @@ In this lab, you will create a simple file server using Express.js, use that ser
 
 ### Create a Server with Express
 
+- [ ] Install the project's dependencies using `npm install`
 - [ ] Start the server by running `index.js` using `npm run dev`.
 - [ ] Visit your running server at `http://localhost:3000` with a web browser.
 
@@ -33,7 +34,7 @@ response.sendFile(__dirname + "/example.html")
 
 - [ ] Create a directory named `public` within your project directory.
 - [ ] Inside `public` create a new file named `index.html`. Inside, use your Emmet abbreviation to create the HTML boiler plate. Have this HTML file display a greeting to the user.
-- [ ] Update the `index.js` file to limit visitor access to the `public` directory. You will set up the `use` method on `app`. 
+- [ ] Update the `index.js` file to limit visitor access to the `public` directory. You will set up the `use` method on `app`.
 
 ```js
 app.use(express.static('public'))
