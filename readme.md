@@ -1,4 +1,4 @@
-# Lab: Hello File Server
+# exercise: Hello File Server
 
 ## Objective
 
@@ -6,11 +6,11 @@ To understand how to use the Express.js library to create a back-end file server
 
 ## Learning
 
-In this lab we will be creating a server that serves any static files, such as HTML, CSS, or JavaScript.
+In this exercise we will be creating a server that serves any static files, such as HTML, CSS, or JavaScript.
 
 ## Achieving
 
-In this lab, you will create a simple file server using Express.js, use that server to access files on a web host, and then limit the files which are served to only those within a specific folder.
+In this exercise, you will create a simple file server using Express.js, use that server to access files on a web host, and then limit the files which are served to only those within a specific folder.
 
 ## Procedure
 
@@ -50,7 +50,7 @@ app.use(express.static('public'))
 
 ## Review
 
-In this lab, you practiced creating an Express back-end server that can send arbitrary files from the server to a browser client. You created a default page for the server to send, as `index.html`, and also created additional files that can be visited from the `index.html` or directly.
+In this exercise, you practiced creating an Express back-end server that can send arbitrary files from the server to a browser client. You created a default page for the server to send, as `index.html`, and also created additional files that can be visited from the `index.html` or directly.
 
 Your software should:
 
